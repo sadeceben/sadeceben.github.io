@@ -1,7 +1,7 @@
 # Site settings
 title: "Cemal Tiryaki"
 bye_message: "Good Byyy Friends..."
-baseurl: "/clyell/"
+baseurl: "https://sadeceben.github.io"
 url: "sadeceben.github.io"
 disqus: cemaltiryaki
 
