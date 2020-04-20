@@ -11,10 +11,10 @@ mail:
     domain: "cemaltiryaki01@gmail.com"
     ext: "ch"
 source_code:
-    server: "github.com"
+    server: "https://sadeceben.github.io"
     nick: "sadeceben"
 blog:
-    server: "wordpress.com"
+    server: "https://sadeceben.github.io"
     nick: "sadeceben"
 fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
 
