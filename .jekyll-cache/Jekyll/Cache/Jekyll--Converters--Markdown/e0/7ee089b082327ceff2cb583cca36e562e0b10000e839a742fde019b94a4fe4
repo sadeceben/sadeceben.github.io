@@ -1,0 +1,68 @@
+I"{<header>
+    <h1>Category List</h1>
+</header>
+
+<ul class="tag-box inline">
+
+     
+        <li>
+            <a href="#bash">
+                bash
+            </a>
+            <span>(1)</span>
+        </li>
+     
+        <li>
+            <a href="#linux">
+                linux
+            </a>
+            <span>(1)</span>
+        </li>
+     
+        <li>
+            <a href="#ruby">
+                ruby
+            </a>
+            <span>(1)</span>
+        </li>
+    
+
+</ul>
+
+<h2 id="bash">bash</h2>
+<ul class="post-list">
+    
+  
+   <li>
+   <a href="/blog/Ruby-Nedir/">Ruby Nedir ?</a>
+   </li>
+  
+  
+  
+ </ul>
+
+<h2 id="linux">linux</h2>
+<ul class="post-list">
+    
+  
+   <li>
+   <a href="/blog/Ruby-Nedir/">Ruby Nedir ?</a>
+   </li>
+  
+  
+  
+ </ul>
+
+<h2 id="ruby">ruby</h2>
+<ul class="post-list">
+    
+  
+   <li>
+   <a href="/blog/Ruby-Nedir/">Ruby Nedir ?</a>
+   </li>
+  
+  
+  
+ </ul>
+
+:ET

@@ -1,0 +1,60 @@
+I"�<p><img src="/clyell/images/posts/2020/rubylogo.jpg" alt="" /></p>
+
+<h3 id="ruby-nedir-">Ruby Nedir ?</h3>
+
+<p>Her şeyden önce nesneye yönelik bir script dilidir. bu dilin yapımcısı ( Yukuhiro Matsumoto ) amacı perlden daha güçlü, pythondan daha nesneye yönelik bir dil yapmaktı. Yapım nedeni ise ilginç, o dönemde ki mevcut programlama dillerin de istediğini bulamayınca yeni bir programlama dili tasarlamaya başlar. Bir çok programlama dilinden esinlenmiştir. Bunlar arasında Perl’de vardır. Bu arada pek teknik bir bilgi olmasada perl (inci) haziran ayının burç taşı. Ruby ise ondan sonra gelen temmuz ayının burç taşı olan Ruby (yakut)’ dir.</p>
+
+<p>Son olarak ruby’nin kendi resmi sitesine girdiğiniz de sizi bir söz karşılar</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Bir programcının en iyi arkadaşı
+</code></pre></div></div>
+
+<p>Bence nedir sorusunun en iyi cevabı budur.</p>
+
+<p><a href="https://www.ruby-lang.org/tr/"><strong>bakmak isteyene…</strong></a></p>
+
+<h3 id="avantajları-nelerdir-">Avantajları nelerdir ?</h3>
+<p>Ruby ile istenileni kodlamak ( Gerçekten ) kolay. Benim en çok sevdiğim yapısı block tanımlarken ki esnekliği ve de parantez zorunluluğu olmaması.</p>
+
+<p>Bu</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">def</span> <span class="nf">selamla</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+       <span class="nb">puts</span> <span class="s2">"Selam, </span><span class="si">#{</span><span class="n">ad</span><span class="si">}</span><span class="s2">"</span>
+   <span class="k">end</span>
+
+   <span class="n">selamla</span><span class="p">(</span><span class="s2">"sadeceben"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Ve bu</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">def</span> <span class="nf">selamla</span> <span class="n">ad</span>
+       <span class="nb">puts</span> <span class="s2">"Selam, </span><span class="si">#{</span><span class="n">ad</span><span class="si">}</span><span class="s2">"</span>
+   <span class="k">end</span>
+
+   <span class="n">selamla</span> <span class="s2">"sadeceben"</span>
+</code></pre></div></div>
+<p>Kod da çalışıcaktır. Ruby de kodlarken kurallara takılmazsınız. Ve kodlarken fark edeceksiniz ki bazı şeyleri tahmin etmeye başlıyorsunuz.
+Mesela sistem zamanını yazdıralım</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">system_date</span>
+    <span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">to_s</span>
+<span class="k">end</span>
+
+<span class="n">system_date</span>
+</code></pre></div></div>
+<p><strong>Kodun Çıktısı :</strong></p>
+
+<p><img src="/clyell/images/posts/2020/kodunçıktısı1.png" alt="Screenshot" /></p>
+
+<p>Linux sistemler’de “system” parametresi ile linux komutları çalıştırmak mümkün olmakla beraber Windows sistemlerde ( Denemedim ) komut çalıştırabiliyor.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/bin/ruby -w</span>
+
+   <span class="k">def</span> <span class="nf">scan</span> <span class="n">ip</span>
+       <span class="nb">system</span> <span class="s2">"nmap -sSV </span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">"</span>
+   <span class="k">end</span>
+
+   <span class="n">ip</span> <span class="o">=</span> <span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">||</span> <span class="s2">"localhost"</span>
+   <span class="nb">scan</span> <span class="n">ip</span>
+</code></pre></div></div>
+<p><strong>Kodun çıktısı :</strong>
+<img src="/clyell/images/posts/2020/kodunçıktısı2.png" alt="Screenshot" /></p>
+
+<p>Aslında fark edemediğim ve hatırlamadığım o kadar çok avantajı var ki. İlerleyen yazılarımda anlatabilirim. Okuduğunuz için teşekkür ederim.</p>
+
+:ET
