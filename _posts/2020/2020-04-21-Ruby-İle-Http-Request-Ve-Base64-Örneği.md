@@ -115,11 +115,10 @@ daha sonra,
 ```ruby
 require "base64"
 ```
-
+<p>
 Tamamdır bundan sonrası çok basit. Dışarıdan iki argüman alıyoruz ilk argümanımız (ARGV[0])  yani "prm" (parametre kelimesini "kendimce" kısaltım) bize decode mu yoksa encode mu yapacağımız söyleyecek. İkinci argümanımız ise  (ARGV[1]) yani "str" (String kelimesini kendimce kısalttım) bize encode ya da decode edilcek kelimeyi verecek. 
-
 Eğer '||' karakterleri ) herhangi bir argüman eksik ya da girilmezse onlara "null" kelimesini (String) atayacak. Bundan sonrası daha da basit. Eğer (if) dedim "str"  "null" değerinden başka bir değer almışsa "-e" ise encode et, "-d" ise decode et. Herhangi bir hata durumunda ise "else" bloklarını çalıştır dedim.
-
+</p>
 **Bu da kodun çalışırken görseli :**
 
 ![]({{ site.baseurl }}images\posts\2020\çalışırjen.png)
