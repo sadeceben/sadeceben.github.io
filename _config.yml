@@ -2,21 +2,21 @@
 title: "Cemal Tiryaki"
 bye_message: "Good Byyy Friends..."
 baseurl: "https://sadeceben.github.io/"
-url: "sadeceben.github.io"
+url: "https://sadeceben.github.io"
 disqus: cemaltiryaki
 
 # Header settings
 nick: "sadeceben"
 mail:
     domain: "cemaltiryaki01@gmail.com"
-    ext: "ch"
+    ext: "com"
 source_code:
-    server: "https://sadeceben.github.io"
+    server: "github.com"
     nick: "sadeceben"
 blog:
-    server: "https://sadeceben.github.io"
+    server: "github.com"
     nick: "sadeceben"
-fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
+#fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
 
 # Build settings
 markdown: kramdown
