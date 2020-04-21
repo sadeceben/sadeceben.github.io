@@ -6,7 +6,6 @@ categories:
     - blog
 tags:
     - ruby
-
 ---
 
 ![]({{ site.baseurl }}images/posts/2020/rubylogo.jpg )
