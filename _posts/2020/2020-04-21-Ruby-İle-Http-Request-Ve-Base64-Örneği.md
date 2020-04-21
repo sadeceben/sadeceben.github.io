@@ -13,7 +13,7 @@ tags:
 
 Konuya başlamadan söylemeliyim. Ben linux tabanlı bir işletim sistemi  kullanıyorum ve yaptığım adımların bir kaç kısmı windowsta  çalışmayabilir. Şimdiden iyi okumalar...
 
-**HTTP REQUEST**
+# HTTP REQUEST ?
 
  Öncelikle http'den kısaca bahsedeyim. HTTP ( Hybertext Transfer Protocol ) , client ( istemci ) ve server ( sunucu ) arasında iletişim sağlayan  protokoldur. Bu iletişim şekline göre de bir çok method vardır. Ben  burada GET methoduyla istek gönderen bir kod yazacağım. Daha fazla  bekletmeden kodumuza geçelim.
 
@@ -34,7 +34,7 @@ sudo gem install httparty
 
 Şimdi kodumuzu anlatmaya geçelim.
 
-**HTTP REQUEST ( GET METHODS ) :**
+# HTTP REQUEST ( GET METHODS ) :
 
 ```ruby
 #!/bin/ruby -w
@@ -68,14 +68,14 @@ Meraklısı için [http request](https://www.w3schools.com/tags/ref_httpmethods.
 
  Bu kod ile diyeceklerim şimdilik bu kadardı. Sırada ki kodumuza geçelim...
 
-**BASE64 ENCODE**
+# BASE64 ENCODE & DECODE
  Base64 nedir birazcık ondan bahsedeyim. **6 bit** ile ifade edilen **64 farklı** sayı, **ASCII** karakter kümesinde yazdıralabilir karakter ( **Printable Character**)  olarak ifade edilen ve aşağıda gösterilen 64 farklı karakterle  eşleştirilmiştir. Eldeki 6 bitlik verinin bu tablo ile eşleştirilmesi  ile **Base64 Encoding** yapılmış olur.
 
 ![]({{ site.baseurl }}images\posts\2020\base64.png)
 
 Şimdi çok konuşmadan kodumuza geçelim.
 
-**BASE64 ENCODE & DECODE :**
+# BASE64 ENCODE & DECODE :
 
 ```ruby
 #!/bin/ruby -w 
