@@ -7,6 +7,7 @@ Sitenin başlık kısmında yazdığı gibi adımı tahmin etmek zor olmasa gere
 
 [twiter](https://twitter.com/cmltryk) || [linkedin](https://www.linkedin.com/in/cemal-tiryaki-b1b376197/) || [github](https://github.com/sadeceben)
 
+
 mail-adresim : cemaltiryaki01@gmail.com
 
 **Beni bull :)**
