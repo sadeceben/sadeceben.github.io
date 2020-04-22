@@ -19,15 +19,15 @@ tags:
 
  OSI birbirleriyle **ardışık** bir şekilde **etkileşimli** yani alt görevli bir şekilde 7 **ayrı** katmandan oluşur.
 
-**Sırasıyla katmanlar
+**Sırasıyla katmanlar**
 
- 1 -****Physical Layer ( Fiziksel Katman )
- 2 -****Data Link Layer ( Veri Bağlantısı Katmanı )
- 3 -****Network Layer ( Ağ Katmanı )
- 4 -****Transport Layer ( İletim Katmanı )
- 5 -****Session Layer ( Oturum Katmanı )
- 6 -****Prensentation Layer ( Sunum Katmanı )
- 7 -****Application Layer ( Uygulama Katmanı )**
+ 1 - **Physical Layer ( Fiziksel Katman )**
+ 2 - **Data Link Layer ( Veri Bağlantısı Katmanı )**
+ 3 - **Network Layer ( Ağ Katmanı )**
+ 4 - **Transport Layer ( İletim Katmanı )**
+ 5 - **Session Layer ( Oturum Katmanı )**
+ 6 - **Prensentation Layer ( Sunum Katmanı )**
+ 7 - **Application Layer ( Uygulama Katmanı )**
 
 
 
@@ -36,7 +36,7 @@ tags:
 
 
 
-**Şimdi bu sıraladığımız katmanları açıklayalım...
+**Şimdi bu sıraladığımız katmanları açıklayalım...**
 
  ## Physical Layer ( Fiziksel Katman ) Nedir && Nasıl Çalışır ?
 
