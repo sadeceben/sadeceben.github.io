@@ -18,9 +18,9 @@ h1 {
 }
 h2 { color: rgba(220,220,0,0.7); }
 h3 { color: rgba(220,220,0,0.6); }
-h4 { color: rgba(220,lor: rgba(220,220,0,0.4); }
-h6 { 220,0,0.5); }
-h5 { cocolor: rgba(220,220,0,0.3); }
+h4 { color: rgba(220,220,0,0.5); }
+h5 { color: rgba(220,220,0,0.4); }
+h6 { color: rgba(220,220,0,0.3); }
 footer {
     color: rgba(220,220,0,0.8);
     font-weight: bold;
