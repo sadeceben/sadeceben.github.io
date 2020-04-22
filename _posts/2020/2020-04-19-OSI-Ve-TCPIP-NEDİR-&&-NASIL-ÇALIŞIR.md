@@ -21,13 +21,14 @@ tags:
 
 **Sırasıyla katmanlar**
 
- 1 - **Physical Layer ( Fiziksel Katman )**
- 2 - **Data Link Layer ( Veri Bağlantısı Katmanı )**
- 3 - **Network Layer ( Ağ Katmanı )**
- 4 - **Transport Layer ( İletim Katmanı )**
- 5 - **Session Layer ( Oturum Katmanı )**
- 6 - **Prensentation Layer ( Sunum Katmanı )**
- 7 - **Application Layer ( Uygulama Katmanı )**
+
+ 1. **Physical Layer ( Fiziksel Katman )**
+ 2. **Data Link Layer ( Veri Bağlantısı Katmanı )**
+ 3. **Network Layer ( Ağ Katmanı )**
+ 4. **Transport Layer ( İletim Katmanı )**
+ 5. **Session Layer ( Oturum Katmanı )**
+ 6. **Prensentation Layer ( Sunum Katmanı )**
+ 7. **Application Layer ( Uygulama Katmanı )**
 
 
 
