@@ -3,7 +3,7 @@ layout: content
 ---
 
 # Who am i ?
-Sitenin başlık kısmında yazdığı gibi adımı tahmin etmek zor olmasa gerek "Cemal Tiryaki".Fırat Üniversitesi Yazılım Mühendisliği 2. sınıf öğrencisiyim.**Siber güvenlik**  alanında araştırmayı ve geliştirmeyi seviyorum.C#, java, nodejs ve Ruby dillerinde çeşitli projelerim oldu.Şuan ise Ruby dilinde ilerliyorum.2019 yılından beridir ise **GNU/Linux** dağıtımlarını kullanıyorum.Ve de **linux'u seviyorum**.Bilgisayar başında sıkıldığımda ise **amatör** olarak şiir yazıyorum.Yeni şeyler öğrenmek ve bu öğrendiğim şeyleri paylaşmayı seviyorum.Aşağıda ki sosyal medya hesaplarından bana ulaşabilirsiniz.
+As I wrote in the title of the site, my name is “**Cemal Tiryaki**”.I am a 2nd year student at Fırat University Software Engineering.I love research and development in the field of **cyber security**.I had several projects in C #, java, nodejs and Ruby languages.Now I am using Ruby language.I have been using **GNU / Linux** distributions since 2019.And **I love linux**.When I get bored at the computer, I write poetry as an **amateur**.I like to learn new things and share what I learned.You can reach me from the social media accounts below.
 
 [twitter](https://twitter.com/cmltryk) | [linkedin](https://www.linkedin.com/in/cemal-tiryaki-b1b376197/) | [github](https://github.com/sadeceben)
 
