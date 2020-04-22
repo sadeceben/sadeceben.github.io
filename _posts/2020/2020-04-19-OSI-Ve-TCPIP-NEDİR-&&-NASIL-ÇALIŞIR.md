@@ -39,15 +39,15 @@ tags:
 
 **Şimdi bu sıraladığımız katmanları açıklayalım...**
 
- ## Physical Layer ( Fiziksel Katman ) Nedir && Nasıl Çalışır ?
+## Physical Layer ( Fiziksel Katman ) Nedir && Nasıl Çalışır ?
 
- Burada gelen verinin bitlere yani ikilik sayı sistemine ( sadece 0 ve 1  olan sayı sistemi ) çevrilmesinden ya da daha farklı bir deyişle verinin dijitalleşmesinden sorumludur . Tek amacı gelen verinin yapısına  bakmaksızın taşımaktır. Nasıl taşır diye sorarsanız ise cevap çok basit **internet kablolarıyla** .
- Tabi cevap basit ama arkada dönen durum biraz öyle değil . Veri bitleri  kablolarla iletilirken belli bir kurala göre iletilir. Bu iki kural iki  bilgisayar arasında kullanılmalıdır. Eğer kullanılmazsa iletişim  sağlanamaz veriler anlamsızlaşır. Peki nedir bu kural, Mesela bit  düzeyinde 1 sayısı +5 volt gücünde 2 milisaniyede gidecek .
+Burada gelen verinin bitlere yani ikilik sayı sistemine ( sadece 0 ve 1  olan sayı sistemi ) çevrilmesinden ya da daha farklı bir deyişle verinin dijitalleşmesinden sorumludur . Tek amacı gelen verinin yapısına  bakmaksızın taşımaktır. Nasıl taşır diye sorarsanız ise cevap çok basit **internet kablolarıyla** .
+Tabi cevap basit ama arkada dönen durum biraz öyle değil . Veri bitleri  kablolarla iletilirken belli bir kurala göre iletilir. Bu iki kural iki  bilgisayar arasında kullanılmalıdır. Eğer kullanılmazsa iletişim  sağlanamaz veriler anlamsızlaşır. Peki nedir bu kural, Mesela bit  düzeyinde 1 sayısı +5 volt gücünde 2 milisaniyede gidecek .
  Eğer ki ikinci cihaz +7 volt 3 milisaniye şeklinde veriyi iletirse işte  burada iletişim sağlanamaz. ISO tam olarak ne iş yapar diye merak  ediyorsanız işte cevabı geliyor. ISO bu standartları sağlıyor. Bir  donanım firması ağ donanımı üretirken ISO'nun bu çıkardığı OSI modeline  göre üretim yapıyor. Bu katman hakkında diyeceklerim bu kadar şimdi  sırada ki katmana geçelim.
 
 ## Data Link Layer ( Veri Bağlantısı Katmanı ) Nedir && Nasıl Çalışır ?
 
- Bu katmanı anlatmadan önce katmanın daha iyi anlaşılması için kısaca ARP ( **Address Resulation Protocol** ) nedir ondan bahsedeyim . Kısaca ARP aynı ağda olduğumuz cihazların  MAC adresini bulmamıza yarayan bir protokoldür. Şimdi katmanı anlatmaya  geçelim.
+Bu katmanı anlatmadan önce katmanın daha iyi anlaşılması için kısaca ARP ( **Address Resulation Protocol** ) nedir ondan bahsedeyim . Kısaca ARP aynı ağda olduğumuz cihazların  MAC adresini bulmamıza yarayan bir protokoldür. Şimdi katmanı anlatmaya  geçelim.
  Veri bağlantı katmanında ARP protokolü ile fiziksel olarak  adreslenmesinden ve paketlerin fiziksel bağlantı sağlanan cihazlara  iletilimesinden sorumludur. Temel olarak görevi budur. Verilerin  kontrolü hata denetimi bu katmanda yapılır. CRC ( **Cyclic Redundancy Check** ) verilerin doğrulandığı bir sistemdir. Peki nasıl doğrular kısaca bahsedeyim. **Gelen veri** ile **alınan veri** aynı ise geçerlidir. Ama eğer yolda değiştirilmişse (**Örn: kötü amaçlı**) CRC bunu engeller. Buraya kadar anlattıklarımı özetlemek istersem aynı  ağda bulunan cihazların adreslenerek verinin güvenli bir şekilde  iletilmesini sağlar .
 
  Sırada ki katmana geçelim....
