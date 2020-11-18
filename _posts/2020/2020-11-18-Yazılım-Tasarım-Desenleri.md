@@ -22,7 +22,7 @@ tags:
 
 
 
-```C#
+```c#
 usingSystem;
 usingSystem.Collections.Generic;
 usingSystem.Linq;
@@ -33,8 +33,8 @@ namespace ConsoleApp2 {
 	class DekoratörDeseni {
 		interface IAraba {
 			void bilgiDetayları ();
-			void fiyatEkle(doubleeklenmişFiyat);
-			void tanımEkle(stringeklenmişTanım);
+			void fiyatEkle(double eklenmişFiyat);
+			void tanımEkle(string eklenmişTanım);
 		}
 		public class Araba: IAraba {
 			public string model { get; set; }
@@ -88,13 +88,18 @@ namespace ConsoleApp2 {
 		static void Main(string[] args) { //Orjinal nesne
             IAraba araba = newAraba() { model = "Polo", marka = "Volkswagen", fiyat = 125.000, tanım = "Yeni araba eklendi"};
             //Nesneye cam tavan özelliğinin eklenmesi
-            camTavanDekoratör camTavan = newcamTavanDekoratör(araba);camTavan.bilgiDetayları();
+            camTavanDekoratör camTavan = new camTavanDekoratör(araba);camTavan.bilgiDetayları();
             //Park sensörü özelliğinin eklenmesi
-            parkSensörüDekoratör parkSensörü= newparkSensörüDekoratör(araba);parkSensörü.bilgiDetayları();
+            parkSensörüDekoratör parkSensörü= new parkSensörüDekoratör(araba);parkSensörü.bilgiDetayları();
 			//Orjinal ikinci nesne
             IAraba araba2 = newAraba() { model = "S90", marka = "Volvo", fiyat = 240.000, tanım = "Yeni araba eklendi"};
             //Park sensörü özelliğinin eklenmesi
-            parkSensörüDekoratör parkSensörü2 = newparkSensörüDekoratör(araba2);parkSensörü2.bilgiDetayları();}}}
+            parkSensörüDekoratör parkSensörü2 = newparkSensörüDekoratör(araba2);
+            parkSensörü2.bilgiDetayları();
+ 
+       }
+    }
+ }
 			
 ```
 
