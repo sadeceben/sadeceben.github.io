@@ -1,5 +1,5 @@
----
 <!-- -*- coding: iso-8859-1 -*- -->
+---
 layout: post
 title:  "Yazılım Tasarım Desenleri"
 date:   2020-11-18 17:19:00
