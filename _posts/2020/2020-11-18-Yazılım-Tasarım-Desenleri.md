@@ -1,8 +1,7 @@
-<!-- -*- coding: utf-8 -*- -->
 ---
 layout: post
 title:  "Yazılım Tasarım Desenleri"
-date:   2020-11-18 17:19:00
+date:   2020-11-18 17:19:26
 categories:
     - blog
 tags:
@@ -31,79 +30,79 @@ usingSystem.Text;
 usingSystem.Threading.Tasks;
 
 namespace ConsoleApp2 {
-	class DekoratörDeseni {
+	class DekoratorDeseni {
 		interface IAraba {
-			void bilgiDetayları ();
-			void fiyatEkle(double eklenmişFiyat);
-			void tanımEkle(string eklenmişTanım);
+			void bilgiDetaylari ();
+			void fiyatEkle(double eklenmisFiyat);
+			void tanimEkle(string eklenmisTanim);
 		}
 		public class Araba: IAraba {
 			public string model { get; set; }
 			public string marka { get; set; }
 			public double fiyat { get; set; }
-			public string tanım { get; set; }
+			public string tanim { get; set; }
 			public Araba() {
 				fiyat = 125.000;
 			}
-			public void bilgiDetayları () {
-				Console.WriteLine(tanım);
+			public void bilgiDetaylari () {
+				Console.WriteLine(tanim);
 			}
-			public void fiyatEkle(double eklenmişFiyat) {
-				fiyat += eklenmişFiyat;
+			public void fiyatEkle(double eklenmisFiyat) {
+				fiyat += eklenmisFiyat;
 			}
-			public void tanımEkle(string eklenmişTanım) {
-				tanım = "Model:" + model + " Marka: " + marka + " Güncel Fiyat: " + fiyat.ToString() + " " + eklenmişTanım;
+			public void tanimEkle(string eklenmisTanim) {
+				tanim = "Model:" + model + " Marka: " + marka + " Guncel Fiyat: " + fiyat.ToString() + " " + eklenmisTanim;
 			}
 		}
-		class ArabaDekoratör: IAraba {
+		class ArabaDekorator: IAraba {
 			private IAraba araba;
-			public ArabaDekoratör(IAraba a) {
+			public ArabaDekorator(IAraba a) {
 				araba = a;
 			}
-			public void bilgiDetayları () {
-				araba.bilgiDetayları ();
+			public void bilgiDetaylari () {
+				araba.bilgiDetaylari ();
 			}
-			public void fiyatEkle(double eklenmişFiyat) {
-				araba.fiyatEkle(eklenmişFiyat);
+			public void fiyatEkle(double eklenmisFiyat) {
+				araba.fiyatEkle(eklenmisFiyat);
 			}
-			public void tanımEkle(string eklenmişTanım) {
-				araba.tanımEkle(eklenmişTanım);
+			public void tanimEkle(string eklenmisTanim) {
+				araba.tanimEkle(eklenmisTanim);
 			}
 		}
-		class camTavanDekoratör: ArabaDekoratör {
-			public camTavanDekoratör(IAraba araba) : base(araba) {}
-			public void bilgiDetayları () {
+		class camTavanDekorator: ArabaDekorator {
+			public camTavanDekorator(IAraba araba) : base(araba) {}
+			public void bilgiDetaylari () {
 				base.fiyatEkle(15);
-				base.tanımEkle("camTavan bilgisi araca eklendi");
-				base.bilgiDetayları ();
+				base.tanimEkle("camTavan bilgisi araca eklendi");
+				base.bilgiDetaylari ();
 			}
 		}
-		class parkSensörüDekoratör: ArabaDekoratör {
-			public parkSensörüDekoratör(IAraba araba) : base(araba) {}
-			public void bilgiDetayları () {
+		class parkSensoruDekorator: ArabaDekorator {
+			public parkSensoruDekorator(IAraba araba) : base(araba) {}
+			public void bilgiDetaylari () {
 				base.fiyatEkle(10);
-				base.tanımEkle("parkSensörüaraca eklendi");
-				base.bilgiDetayları ();
+				base.tanimEkle("parkSensoruaraca eklendi");
+				base.bilgiDetaylari ();
 			}
 		}
 		static void Main(string[] args) { //Orjinal nesne
-            IAraba araba = newAraba() { model = "Polo", marka = "Volkswagen", fiyat = 125.000, tanım = "Yeni araba eklendi"};
-            //Nesneye cam tavan özelliğinin eklenmesi
-            camTavanDekoratör camTavan = new camTavanDekoratör(araba);
-            camTavan.bilgiDetayları();
-            //Park sensörü özelliğinin eklenmesi
-            parkSensörüDekoratör parkSensörü= new parkSensörüDekoratör(araba);
-            parkSensörü.bilgiDetayları();
+            IAraba araba = new Araba() { model = "Polo", marka = "Volkswagen", fiyat = 125.000, tanim = "Yeni araba eklendi"};
+            //Nesneye cam tavan ozelliğinin eklenmesi
+            camTavanDekorator camTavan = new camTavanDekorator(araba);
+            camTavan.bilgiDetaylari();
+            //Park sensoru ozelliğinin eklenmesi
+            parkSensoruDekorator parkSensoru= new parkSensoruDekorator(araba);
+            parkSensoru.bilgiDetaylari();
 			//Orjinal ikinci nesne
-            IAraba araba2 = new Araba() { model = "S90", marka = "Volvo", fiyat = 240.000, tanım = "Yeni araba eklendi"};
-            //Park sensörü özelliğinin eklenmesi
-            parkSensörüDekoratör parkSensörü2 = new parkSensörüDekoratör(araba2);
-            parkSensörü2.bilgiDetayları();
+            IAraba araba2 = new Araba() { model = "S90", marka = "Volvo", fiyat = 240.000, tanim = "Yeni araba eklendi"};
+            //Park sensoru ozelliğinin eklenmesi
+            parkSensoruDekorator parkSensoru2 = new parkSensoruDekorator(araba2);
+            parkSensoru2.bilgiDetaylari();
  
        }
     }
  }
-			
+
 ```
 
 
