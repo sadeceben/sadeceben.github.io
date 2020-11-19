@@ -87,15 +87,15 @@ namespace ConsoleApp2 {
 		}
 		static void Main(string[] args) { //Orjinal nesne
             IAraba araba = new Araba() { model = "Polo", marka = "Volkswagen", fiyat = 125.000, tanim = "Yeni araba eklendi"};
-            //Nesneye cam tavan ozelliğinin eklenmesi
+            //Nesneye cam tavan ozelliginin eklenmesi
             camTavanDekorator camTavan = new camTavanDekorator(araba);
             camTavan.bilgiDetaylari();
-            //Park sensoru ozelliğinin eklenmesi
+            //Park sensoru ozelliginin eklenmesi
             parkSensoruDekorator parkSensoru= new parkSensoruDekorator(araba);
             parkSensoru.bilgiDetaylari();
 			//Orjinal ikinci nesne
             IAraba araba2 = new Araba() { model = "S90", marka = "Volvo", fiyat = 240.000, tanim = "Yeni araba eklendi"};
-            //Park sensoru ozelliğinin eklenmesi
+            //Park sensoru ozelliginin eklenmesi
             parkSensoruDekorator parkSensoru2 = new parkSensoruDekorator(araba2);
             parkSensoru2.bilgiDetaylari();
  
@@ -129,23 +129,23 @@ namespace ConsoleApp2 {
 				if (_nesne == null) {
 					Console.WriteLine("Robot inaktif durumdadir");
 					_nesne = newNesne();
-					return "Proxy sinifirobotun isteğini bulamiyor. Lutfen robotu aktif ediniz. \n";
+					return "Proxy sinifirobotun istegini bulamiyor. Lutfen robotu aktif ediniz. \n";
 				}
 				else Console.WriteLine("Robot aktif durumdadir");
-				return "Proxy sinifirobotun isteğini belirtiyor: " + _nesne.istek();
+				return "Proxy sinifirobotun istegini belirtiyor: " + _nesne.istek();
 			}
 		}
 		public class korumaProxy: INesne {
 			Nesne _nesne;
 			string sifre = "hodor";
-			public string doğrulama(string _s) {
-				if (_s != sifre) return "Koruma Proxy: Sifre geçerli değil, erisim izni yok";
+			public string dogrulama(string _s) {
+				if (_s != sifre) return "Koruma Proxy: Sifre gecerli degil, erisim izni yok";
 				else_nesne = new Nesne();
-				return "Koruma proxy: Sifre geçerli, erisim sağlandi";
+				return "Koruma proxy: Sifre gecerli, erisim saglandi";
 			}
 			public string istek() {
-				if (_nesne == null) return "Koruma proxy: Ilk olarak doğrulama islemi gerçeklestirinz";
-				else return "Proxy sinifirobotun isteğini belirtiyor: " + _nesne.istek();
+				if (_nesne == null) return "Koruma proxy: Ilk olarak dogrulama islemi gerceklestirinz";
+				else return "Proxy sinifirobotun istegini belirtiyor: " + _nesne.istek();
 			}
 		}
 		static void Main(string[] args) {
@@ -153,8 +153,8 @@ namespace ConsoleApp2 {
 			Console.WriteLine(_nesne.istek());
 			Console.WriteLine(_nesne.istek());
 			_nesne = new korumaProxy();
-			Console.WriteLine((_nesne askorumaProxy).doğrulama("Deneme"));
-			Console.WriteLine((_nesne askorumaProxy).doğrulama("hodor"));
+			Console.WriteLine((_nesne askorumaProxy).dogrulama("Deneme"));
+			Console.WriteLine((_nesne askorumaProxy).dogrulama("hodor"));
 			Console.WriteLine(_nesne.istek());
 			Console.ReadKey();
 		}
@@ -270,13 +270,13 @@ namespace ConsoleApp3 {
 				this._s = altS;
 			}
 			public string Islem() {
-				string sonuç = "Cephe  Tasarim Altsistemleri Baslatti\n";
-				sonuç += this._g.islem1();
-				sonuç += this._s.islem1();
-				sonuç += "Cephe TasarimiAltsistemlere Komut Gonderiyor...\n";
-				sonuç += this._g.islem2();
-				sonuç += this._s.islem2();
-				return sonuç;
+				string sonuc = "Cephe  Tasarim Altsistemleri Baslatti\n";
+				sonuc += this._g.islem1();
+				sonuc += this._s.islem1();
+				sonuc += "Cephe TasarimiAltsistemlere Komut Gonderiyor...\n";
+				sonuc += this._g.islem2();
+				sonuc += this._s.islem2();
+				return sonuc;
 			}
 		}
 		static void Main(string[] args) {
@@ -288,4 +288,3 @@ namespace ConsoleApp3 {
 	}
 }
 ```
-
