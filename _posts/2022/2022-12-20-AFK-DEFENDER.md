@@ -66,7 +66,7 @@ Hadi o zaman kolları sıvayalım
 ve şu lanet olası scripti yazalım :D
 
 
-Öncelik cargo ile bir dizin oluşturalım.
+ilk iş olarak cargo ile bir dizin oluşturalım.
 ```bash
 cargo new afk-defender --vcs none
 ```
@@ -94,11 +94,11 @@ Kullanımı son derece basit.
 Daha sonra `src/main.rs` dosyasına geçelim.
 
 Öncelikle neleri import ettik gelin onlara bakalım.
-- clap: komut satırı argümanlarını parse etmek için.
-- enigo: mouse ve klavye işlemleri için.
-- std::thread::sleep: threadlerin uyumasını sağlamak için.
+- `clap`: komut satırı argümanlarını parse etmek için.
+- `enigo`: mouse ve klavye işlemleri için.
+- `std::thread::sleep`: threadlerin uyumasını sağlamak için.
 yani kısaca, programızın beklemesi için.
-- std::time::Duration: sleep fonksiyonuna 
+- `std::time::Duration`: sleep fonksiyonuna 
 verilecek parametreler için.
 ```rust
 use clap::Parser;
@@ -156,11 +156,11 @@ fn main() {
     let mut enigo = Enigo::new();
 
     loop {
-        let firs_position = enigo.mouse_location();
+        let first_position = enigo.mouse_location();
         sleep(Duration::from_secs(timer));
         
         let second_position = enigo.mouse_location();
-        if firs_position == second_position {
+        if first_position == second_position {
             defend_ass(0, 0);
         }
     }
@@ -196,11 +196,11 @@ fn main() {
     let mut enigo = Enigo::new();
 
     loop {
-        let firs_position = enigo.mouse_location();
+        let first_position = enigo.mouse_location();
         sleep(Duration::from_secs(timer));
         
         let second_position = enigo.mouse_location();
-        if firs_position == second_position {
+        if first_position == second_position {
             defend_ass(0, 0);
         }
     }
@@ -214,8 +214,8 @@ Gelin bir de çalıştıralım.
 ```bash
 cargo run -q -- -t 10
 ```
-`-q` argümanı, cargo'nun çıktılarını engellemek için.
-`-t` argümanı, timer'ı 10 saniye olarak ayarlamak için.
+- `-q` argümanı, cargo'nun çıktılarını engellemek için.
+- `-t` argümanı, timer'ı 10 saniye olarak ayarlamak için.
 
 ![Record]({{ site.baseurl }}images/posts/2022/record.gif)
 
