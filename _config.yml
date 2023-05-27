@@ -1,17 +1,17 @@
 # Site settings
-title: "Cemal Tiryaki"
+title: "sadeceben"
 bye_message: "I am a hacker, and this is my manifesto.  You may stop this individual,
                     but you can't stop us all... after all, we're all alike.
 
                                          +++The Mentor+++"
 baseurl: "https://sadeceben.github.io/"
 url: "https://sadeceben.github.io"
-disqus: cemaltiryaki
+disqus: sadeceben
 
 # Header settings
 nick: "sadeceben"
 mail:
-    domain: "cemaltiryaki01@gmail.com"
+    domain: "sadeceben@vuhuv.com"
     ext: "com"
 source_code:
     server: "github.com"
